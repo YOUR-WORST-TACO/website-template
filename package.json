@@ -1,0 +1,27 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp sass && node ./index.js",
+    "dev": "concurrently --kill-others \"nodemon ./index.js\" \"npm run gulp-watch\"",
+    "gulp-watch": "gulp sass:watch"
+  },
+  "author": "stephen@tafoya.dev",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^6.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
